@@ -1,0 +1,22 @@
+{
+  "library": "TaroComps",
+  "libraryTarget": "umd",
+  "sourceMap": true,
+  "alias": {
+    "@": "./src/components"
+  },
+  "plugins": [
+    [
+      "build-plugin-component",
+      {
+        "themePackage": "@alifd/theme-2"
+      },
+      "@alilc/build-plugin-alt",
+      {
+        "type": "plugin",
+        "inject": true,
+        "openUrl": "http://localhost:5556?debug"
+      }
+    ]
+  ]
+}

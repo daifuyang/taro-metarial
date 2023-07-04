@@ -1,0 +1,15 @@
+.taro-divider {
+  position: relative;
+  height: 20px;
+  &::after {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    content: '';
+    pointer-events: none;
+    border-bottom: 1px var(--border-style,solid) var(--border-color,#e5e5e5);
+  }
+}
