@@ -42,7 +42,7 @@ const RichText: React.FC<RichTextProps> = function RichText({ html, __designMode
 <p style="text-align: left;"><span style="text-align: left;">也可在这里插入图片、并对图片加上超级链接，方便用户点击。</span></p>`;
   }
 
-  return <Component className="taro-rich-text" dangerouslySetInnerHTML={{ __html: html }} />;
+  return <Component className="taro_html taro-rich-text" dangerouslySetInnerHTML={{ __html: html }} />;
 };
 
 RichText.displayName = 'RichText';

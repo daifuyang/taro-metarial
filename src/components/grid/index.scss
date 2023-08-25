@@ -1,0 +1,51 @@
+.taro-grid {
+  background-color: #fff;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  --taro-grid-columns: 25%;
+
+  .taro-grid-item {
+    flex-basis: var(--taro-grid-columns);
+    position: relative;
+    box-sizing: border-box;
+
+    .taro-grid-item-content {
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+
+      .icon {
+        width: 100%;
+        padding-top: 70%;
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .taro-grid-item-text {
+        width: 100%;
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 12px;
+        font-weight: 400;
+        padding-bottom: 9px;
+        line-height: 24px;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-align: center;
+      }
+    }
+  }
+
+  .taro-grid-empty {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
